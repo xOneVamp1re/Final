@@ -1,0 +1,55 @@
+@use '../base/vars.scss' as *;
+
+.header {
+  background-color: $bg-main--color;
+  padding: 0 16px;
+  @media (min-width: 1439.98px) {
+    display: none;
+  }
+  @media (min-width: 359.98px) {
+    padding: 0 24px;
+  }
+  &__inner {
+    min-height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+  }
+  &__separator {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+  }
+  &__logo-separator {
+    display: none;
+  }
+  &__logo {
+    display: inline-flex;
+    margin-right: auto;
+  }
+  &__buttons--tablet {
+    display: none;
+  }
+  &__bottom-border {
+    border-bottom: 1px solid rgb(217, 255, 245);
+  }
+
+  @media (min-width: 767.98px) {
+    padding: 0 40px 0 24px;
+    &__logo-separator {
+      display: block;
+    }
+    &__buttons--tablet {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+  }
+  @media (min-width: 1119.98px) {
+    padding: 0;
+    max-width: 1056px;
+    margin: 0 auto;
+  }
+}

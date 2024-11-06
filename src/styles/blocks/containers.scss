@@ -1,0 +1,35 @@
+.container {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+}
+.main-container {
+  padding: 0 16px;
+  padding-bottom: 35px;
+  @media (min-width: 767.98px) {
+    padding: 0 24px 0 24px;
+    padding-bottom: 35px;
+  }
+  @media (min-width: 1119.98px) {
+    padding: 0;
+    max-width: 1056px;
+    margin: 0 auto;
+  }
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: 90px;
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+  .text-wrapper {
+    row-gap: 30px;
+    height: 160px;
+  }
+}
