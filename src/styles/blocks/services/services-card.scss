@@ -7,6 +7,7 @@
   background: $bg-main--color;
   padding: 0 16px;
   width: 100%;
+
   &__button {
     width: 40px;
     height: 40px;
@@ -40,5 +41,75 @@
   &--cost {
     padding: 16px;
     height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 119px;
+    grid-template-areas:
+      'theme theme'
+      'price price'
+      'term button';
+    gap: 16px;
+
+    @media (min-width: 767.98px) {
+      display: grid;
+      grid-template-columns: 1fr 74px 81px 119px;
+      padding: 0 16px;
+      height: auto;
+      gap: 0 22px;
+      border: none;
+      align-items: center;
+      justify-content: left;
+    }
+    @media (min-width: 1119.98px) {
+      grid-template-columns: 3fr 1fr 1fr 119px;
+    }
+  }
+
+  &__theme,
+  &__price,
+  &__term {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    &-title {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: $text-accent--color;
+      @media (min-width: 767.98px) {
+        display: none;
+      }
+    }
+    &-value {
+      color: $text--color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      text-align: left;
+    }
+  }
+  &__theme {
+    grid-area: theme;
+    @media (min-width: 767.98px) {
+      grid-column: 1/2;
+      grid-row: 1/4;
+    }
+  }
+  &__price {
+    grid-area: price;
+    @media (min-width: 767.98px) {
+      grid-column: 2/3;
+      grid-row: 1/4;
+    }
+  }
+
+  &__term {
+    grid-area: term;
+    @media (min-width: 767.98px) {
+      grid-column: 3/4;
+      grid-row: 1/4;
+    }
   }
 }

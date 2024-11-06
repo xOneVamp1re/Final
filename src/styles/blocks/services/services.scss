@@ -46,6 +46,11 @@
   }
   &__send-button {
     align-self: flex-end;
+    grid-area: button;
+    @media (min-width: 767.98px) {
+      grid-column: 4/5;
+      grid-row: 1/4;
+    }
   }
   &__info {
     padding: 16px 16px 0 16px;
@@ -71,5 +76,31 @@
       letter-spacing: -0.2px;
       text-align: left;
     }
+  }
+}
+
+.services-provided__cost-table-header {
+  display: none;
+  color: $text-accent--color;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  @media (min-width: 767.98px) {
+    background-color: $bg-accent--color;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 74px 81px 119px;
+    padding: 0 16px;
+    height: auto;
+    gap: 0 22px;
+  }
+  @media (min-width: 1119.98px) {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: 3fr 1fr 1fr 119px;
+    gap: 0 16px;
   }
 }
