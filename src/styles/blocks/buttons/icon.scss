@@ -10,6 +10,7 @@
   transition-property: fill;
   transition-duration: $transition-duration;
   transition-timing-function: ease-in-out;
+
   &--logo {
     width: 97px;
     height: 51px;
@@ -60,5 +61,11 @@
   &--arrows {
     width: 24px;
     height: 24px;
+  }
+  &--arrow-link {
+    fill: $button-color;
+    width: 6px;
+    height: 11px;
+    flex-grow: 0;
   }
 }

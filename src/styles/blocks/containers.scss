@@ -23,13 +23,16 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  height: 90px;
+  max-height: 90px;
   overflow-y: hidden;
+  &--off {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 768px) {
   .text-wrapper {
     row-gap: 30px;
-    height: 160px;
+    max-height: 160px;
   }
 }

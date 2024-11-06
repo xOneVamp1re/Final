@@ -116,7 +116,9 @@
                 ></li
               >
               <li class="mobile-nav-menu__item"
-                ><a class="mobile-nav-menu__link" href="#!"
+                ><a
+                  class="mobile-nav-menu__link mobile-nav-menu__link--active"
+                  href="#!"
                   >Услуги и сервисы</a
                 ></li
               >
@@ -126,9 +128,7 @@
                 ></li
               >
               <li class="mobile-nav-menu__item"
-                ><a
-                  class="mobile-nav-menu__link mobile-nav-menu__link--active"
-                  href="#!"
+                ><a class="mobile-nav-menu__link" href="#!"
                   >Продавцам техники</a
                 ></li
               >
@@ -265,8 +265,8 @@
           </nav>
 
           <article class="about-us">
-            <section class="about-us__text">
-              <div class="text-wrapper">
+            <div class="about-us__text">
+              <div class="text-wrapper" data-show-more="about-us">
                 <p class="about-us__main-text"
                   >Мы являемся авторизованным сервисным центром по ремонту
                   техники Dell. Только у нас вы можете отремонтировать свой
@@ -280,10 +280,22 @@
                   близким.</p
                 >
               </div>
-              <button class="about-us__read-more" type="button"
-                >Читать далее</button
+              <button
+                class="about-us__read-more"
+                type="button"
+                data-show-more="about-us"
               >
-            </section>
+                <svg
+                  class="icon icon--arrows"
+                  viewBox="-5 -6 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./assets/images/icons/sprites.svg#ic_arrows"></use>
+                </svg>
+                Читать далее</button
+              >
+            </div>
             <img
               class="about-us__img"
               src="./assets/images/company.jpg"
@@ -902,8 +914,11 @@
                 постоянное обслуживание, оставьте заявку.
               </p>
               <a class="services__info-link" href="#!"
-                >Получить коммерческое предложение</a
-              >
+                >Получить коммерческое предложение
+                <svg class="icon icon--arrow-link" viewBox="">
+                  <use href="./assets/images/icons/sprites.svg#ic_arrow"></use>
+                </svg>
+              </a>
             </div>
           </section>
         </div>

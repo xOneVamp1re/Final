@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 })
+
 //   modalСloseButtons.forEach((item) => {
 //     item.addEventListener('click', function (event) {
 //       closeModalWindow()
