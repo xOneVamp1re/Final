@@ -9,14 +9,15 @@
   width: 100%;
 
   @media (min-width: 1119.98px) {
+    transition: all 0.2s ease-in-out;
     &:hover:not(&--cost) {
       border: 1px solid rgb(207, 207, 207);
       .services-card__button {
+        transition: all 0.2s ease-in-out;
         background-color: $button-color--hover;
       }
     }
   }
-
   &__button {
     width: 40px;
     height: 40px;
