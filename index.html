@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.Мы успешно работаем с 1992 года.">
+    <meta name="keywords" content="CPS,ремонт,сервисный центр,Dell">
     <title>Document</title>
-  <script defer="defer" src="main.098a7f59d45796d9baaa.js"></script><link href="css/main.064df7567047edf845b1.css" rel="stylesheet"></head>
+  <script defer="defer" src="main.098a7f59d45796d9baaa.js"></script><link href="css/main.e28c1806b84de0862c93.css" rel="stylesheet"></head>
 
   <body>
     <div class="container">
@@ -572,8 +572,8 @@
       <div class="modal__inner modal-call__inner">
         <h3 class="modal__title modal-call__title"> Заказать звонок </h3>
 
-        <div class="modal__form modal-call__form">
-          <input type="tel" name="tel" class="modal__form-field" autocomplete="tel" placeholder="Номер телефона" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
+        <form class="modal__form modal-call__form">
+          <input type="tel" name="tel" class="modal__form-field" autocomplete="tel" placeholder="Номер телефона">
 
           <div class="modal__form-info">
             Нажимая
@@ -586,7 +586,7 @@
           <button class="send-button modal__send-button" type="submit">
             <span class="send-button__text">Отправить</span><svg class="icon icon--send-arrow">
               <use href="src/assets/images/icons/sprites.a67c214da7c93dd5248f.svg#ic_arrow"></use></svg></button>
-        </div>
+        </form>
       </div>
     </dialog>
     <dialog class="modal modal-feedback" data-modal="modal-feedback">
@@ -597,11 +597,11 @@
       </button>
       <div class="modal__inner modal-feedback__inner">
         <h3 class="modal__title modal-feedback__title">Обратная связь</h3>
-        <div class="modal__form">
+        <form class="modal__form">
           <input type="text" name="first_name" placeholder="Имя" id="feedbackFirstName" class="modal__form-field" autocomplete="username">
-          <input type="tel" name="tel" id="feedbackTelNumber" class="modal__form-field" autocomplete="tel" placeholder="Номер телефона" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
-          <input type="email" name="email" autocomplete="email" id="feedbackEmail" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Электронная почта" class="modal__form-field">
-          <textarea name="message" id="feedbackMessage" rows="4" class="modal__form-field" placeholder="Сообщение"></textarea>
+          <input type="tel" name="tel" id="feedbackTelNumber" class="modal__form-field" autocomplete="tel" placeholder="Номер телефона">
+          <input type="email" name="email" autocomplete="email" id="feedbackEmail" placeholder="Электронная почта" class="modal__form-field">
+          <textarea name="message" id="feedbackMessage" rows="6" class="modal__form-field modal__form-field--textarea" placeholder="Сообщение"></textarea>
           <div class="modal__form-info">
             Нажимая
             <q>отправить</q>
@@ -614,7 +614,7 @@
           <button class="send-button modal__send-button" type="submit">
             <span class="send-button__text">Отправить</span><svg class="icon icon--send-arrow">
               <use href="src/assets/images/icons/sprites.a67c214da7c93dd5248f.svg#ic_arrow"></use></svg></button>
-        </div>
+        </form>
       </div>
     </dialog>
   </body>
