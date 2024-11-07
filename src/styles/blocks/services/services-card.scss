@@ -8,6 +8,15 @@
   padding: 0 16px;
   width: 100%;
 
+  @media (min-width: 1119.98px) {
+    &:hover:not(&--cost) {
+      border: 1px solid rgb(207, 207, 207);
+      .services-card__button {
+        background-color: $button-color--hover;
+      }
+    }
+  }
+
   &__button {
     width: 40px;
     height: 40px;
@@ -17,14 +26,6 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    @media (min-width: 1119.98px) {
-      &:hover {
-        border-color: $button-color--hover;
-        .icon {
-          fill: $button-color--hover;
-        }
-      }
-    }
     &--device {
       align-self: flex-end;
     }
