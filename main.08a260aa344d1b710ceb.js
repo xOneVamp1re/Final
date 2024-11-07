@@ -42,7 +42,6 @@ mobileMenuOverlay.addEventListener('click', function (_event) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const showMoreButtons = document.querySelectorAll('.button-show-more');
-  window.addEventListener('resize', event => {});
   showMoreButtons.forEach(function (item) {
     item.addEventListener('click', function (event) {
       event.preventDefault();
@@ -10735,4 +10734,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.342e7293f9fd5b209371.js.map
+//# sourceMappingURL=main.08a260aa344d1b710ceb.js.map
