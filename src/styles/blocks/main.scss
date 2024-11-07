@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 1119.98px) {
+@media (min-width: 1439.98px) {
   .main {
     &__header {
       padding-top: 41px;
@@ -58,7 +58,7 @@
       column-gap: 9px;
     }
     &__header-action-text {
-      color: rgb(27, 28, 33);
+      color: $text--color;
       font-size: 16px;
       font-weight: 500;
       letter-spacing: -0.2px;
