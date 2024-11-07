@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const showMoreButtons = document.querySelectorAll('.button-show-more')
-  window.addEventListener('resize', (event) => {})
+
   showMoreButtons.forEach(function (item) {
     item.addEventListener('click', function (event) {
       event.preventDefault()
