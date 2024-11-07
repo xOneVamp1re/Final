@@ -998,6 +998,7 @@ button.swiper-pagination-bullet {
   border: 2px #ff3e79 solid;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
@@ -1688,4 +1689,4 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/*# sourceMappingURL=main.3f75e775a6c056ca3ad8.css.map*/
+/*# sourceMappingURL=main.3ddad51494ce4177669d.css.map*/
