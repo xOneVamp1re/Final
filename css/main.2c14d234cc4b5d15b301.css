@@ -985,10 +985,14 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 @media (min-width: 1119.98px) {
+  .services-card {
+    transition: all 0.2s ease-in-out;
+  }
   .services-card:hover:not(.services-card--cost) {
     border: 1px solid rgb(207, 207, 207);
   }
   .services-card:hover:not(.services-card--cost) .services-card__button {
+    transition: all 0.2s ease-in-out;
     background-color: #fddde6;
   }
 }
@@ -1689,4 +1693,4 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/*# sourceMappingURL=main.3ddad51494ce4177669d.css.map*/
+/*# sourceMappingURL=main.2c14d234cc4b5d15b301.css.map*/
