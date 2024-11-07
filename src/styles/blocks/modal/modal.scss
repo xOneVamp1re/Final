@@ -89,6 +89,10 @@
       letter-spacing: -0.2;
       font-weight: 500;
     }
+    &--textarea {
+      resize: none;
+      height: initial;
+    }
   }
   &__form-info-link {
     font-weight: 500;

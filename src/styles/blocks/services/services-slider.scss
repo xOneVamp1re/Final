@@ -109,6 +109,9 @@
     &--cost {
       width: 260px;
       @media (min-width: 767.98px) {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgb(234, 234, 234);
+        }
         &:nth-child(2) {
           grid-column: 1/5;
           grid-row: 2/3;
