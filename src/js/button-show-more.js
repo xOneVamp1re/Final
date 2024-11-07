@@ -22,34 +22,3 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 })
-
-//   modalСloseButtons.forEach((item) => {
-//     item.addEventListener('click', function (event) {
-//       closeModalWindow()
-//     })
-//   })
-
-//   function closeModalWindow() {
-//     const timeAnimation = 280
-//     const timeClose = 260
-
-//     modalElem.animate([{ opacity: '1' }, { opacity: '0' }], {
-//       duration: timeAnimation,
-//       easing: 'ease-in-out'
-//     })
-//     modalButtonClose.animate([{ translate: '0' }, { translate: '1000%' }], {
-//       duration: timeAnimation,
-//       easing: 'ease-in-out'
-//     })
-//     modalElemInner.animate([{ translate: '0' }, { translate: '100%' }], {
-//       duration: timeAnimation,
-//       easing: 'ease-in-out'
-//     })
-//     setTimeout(() => {
-//       modalElem.close(),
-//         document.body.classList.remove('modal-close-scroll'),
-//         modalButtonClose.classList.remove('modal-close--active')
-//     }, timeClose)
-//   }
-//   // })
-// })

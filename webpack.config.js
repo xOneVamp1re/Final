@@ -113,7 +113,7 @@ module.exports = (env) => {
         }
       ]
     },
-    devtool: isDev ? 'inline-source-map' : false,
+    devtool: isDev ? 'source-map' : false,
     devServer: {
       compress: true,
       open: true,

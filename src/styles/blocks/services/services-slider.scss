@@ -68,6 +68,7 @@
       gap: 16px 32px;
       &--cost {
         grid-template-columns: 3fr 1fr 1fr 119px;
+        gap: 0;
       }
     }
   }
