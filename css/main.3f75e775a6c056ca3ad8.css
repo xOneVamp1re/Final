@@ -984,6 +984,14 @@ button.swiper-pagination-bullet {
   padding: 0 16px;
   width: 100%;
 }
+@media (min-width: 1119.98px) {
+  .services-card:hover:not(.services-card--cost) {
+    border: 1px solid rgb(207, 207, 207);
+  }
+  .services-card:hover:not(.services-card--cost) .services-card__button {
+    background-color: #fddde6;
+  }
+}
 .services-card__button {
   width: 40px;
   height: 40px;
@@ -993,14 +1001,6 @@ button.swiper-pagination-bullet {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-}
-@media (min-width: 1119.98px) {
-  .services-card__button:hover {
-    border-color: #fddde6;
-  }
-  .services-card__button:hover .icon {
-    fill: #fddde6;
-  }
 }
 .services-card__button--device {
   align-self: flex-end;
@@ -1688,4 +1688,4 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/*# sourceMappingURL=main.c2b12a8b03e8c5a73a87.css.map*/
+/*# sourceMappingURL=main.3f75e775a6c056ca3ad8.css.map*/
