@@ -4,6 +4,7 @@
   z-index: 250;
   color: $text--color;
   background-color: $bg-main--color;
+
   &::backdrop {
     background-color: rgb(255 255 255 / 0.96);
   }
@@ -102,6 +103,9 @@
     color: rgb(255, 62, 121);
   }
   &__inner {
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     animation: openModal 0.45s ease-in-out forwards;
     z-index: 250;
     right: 0;

@@ -1,6 +1,7 @@
 @use '../../base/vars.scss' as *;
 
 .slider-nav {
+  position: relative;
   margin-left: -16px;
   margin-right: -16px;
   &__items {
@@ -24,13 +25,44 @@
     letter-spacing: -0.2px;
     text-align: left;
     white-space: nowrap;
-
     border: 2px solid transparent;
   }
   &__link:hover {
     border: 2px solid rgb(184, 255, 236);
     border-radius: 6px;
     background: rgb(255, 255, 255);
+  }
+
+  // top: 0;
+  // height: 100%;
+  // width: 100%;
+  // @media (min-width: 767.98px) {
+  //   width: 0;
+  //   height: 0;
+  // }
+  &__fade-elem-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+      270deg,
+      rgb(248, 248, 248) 16.836%,
+      rgba(248, 248, 248, 0) 100%
+    );
+    position: absolute;
+    height: 100%;
+    width: 24px;
+    z-index: 5;
+  }
+  &__fade-elem-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #f8f8f8 17%, hsla(0, 0%, 97.3%, 0));
+    position: absolute;
+    height: 100%;
+    width: 24px;
+    z-index: 5;
   }
 }
 @media (min-width: 767.98px) {
@@ -53,6 +85,12 @@
     }
     &__link {
       padding: 8px 17px 8px 17px;
+    }
+    &__fade-elem-right {
+      display: none;
+    }
+    &__fade-elem-left {
+      display: none;
     }
   }
 }

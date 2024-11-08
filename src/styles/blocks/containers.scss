@@ -25,14 +25,11 @@
   row-gap: 15px;
   max-height: 90px;
   overflow-y: hidden;
-  &--off {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .text-wrapper {
+  @media (min-width: 768px) {
     row-gap: 30px;
     max-height: 160px;
+  }
+  &--active {
+    max-height: 100vh;
   }
 }

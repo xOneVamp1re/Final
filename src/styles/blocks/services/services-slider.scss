@@ -111,7 +111,18 @@
       width: 260px;
       @media (min-width: 767.98px) {
         &:not(:last-child) {
-          border-bottom: 1px solid rgb(234, 234, 234);
+          ::after {
+            position: absolute;
+            margin-right: 16px;
+            width: calc(100% - 32px);
+            height: 1px;
+            bottom: 0;
+            left: 16px;
+            background-color: rgb(234, 234, 234);
+            background-clip: content-box;
+            transition: all 0.1s linear;
+            content: '';
+          }
         }
         &:nth-child(2) {
           grid-column: 1/5;

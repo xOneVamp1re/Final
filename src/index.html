@@ -237,8 +237,10 @@
               </a>
             </div>
           </div>
-
           <nav class="slider-nav">
+            <div class="slider-nav__fade-elem-right"></div>
+            <div class="slider-nav__fade-elem-left"></div>
+
             <ul class="slider-nav__items">
               <li class="slider-nav__item"
                 ><a class="slider-nav__link" href="#!"
@@ -284,7 +286,7 @@
                 >
               </div>
               <button
-                class="about-us__read-more"
+                class="button-show-more button-show-more--about-us"
                 type="button"
                 data-show-more="about-us"
               >
@@ -294,10 +296,11 @@
                   width="24"
                   height="24"
                 >
-                  <use href="./assets/images/icons/sprites.svg#ic_arrows"></use>
-                </svg>
-                Читать далее</button
-              >
+                  <use
+                    href="./assets/images/icons/sprites.svg#ic_arrows"
+                  ></use></svg
+                ><span>Читать далее</span>
+              </button>
             </div>
             <img
               class="about-us__img"
@@ -954,11 +957,12 @@
 
         <form class="modal__form modal-call__form">
           <input
+            class="modal__form-field"
             type="tel"
             name="tel"
-            class="modal__form-field"
             autocomplete="tel"
             placeholder="Номер телефона"
+            required
           />
 
           <div class="modal__form-info">
@@ -998,35 +1002,39 @@
         <h3 class="modal__title modal-feedback__title">Обратная связь</h3>
         <form class="modal__form">
           <input
+            class="modal__form-field"
             type="text"
             name="first_name"
             placeholder="Имя"
             id="feedbackFirstName"
-            class="modal__form-field"
             autocomplete="username"
+            required
           />
           <input
+            class="modal__form-field"
             type="tel"
             name="tel"
             id="feedbackTelNumber"
-            class="modal__form-field"
             autocomplete="tel"
             placeholder="Номер телефона"
+            required
           />
           <input
+            class="modal__form-field"
             type="email"
             name="email"
             autocomplete="email"
             id="feedbackEmail"
             placeholder="Электронная почта"
-            class="modal__form-field"
+            required
           />
           <textarea
+            class="modal__form-field modal__form-field--textarea"
             name="message"
             id="feedbackMessage"
             rows="6"
-            class="modal__form-field modal__form-field--textarea"
             placeholder="Сообщение"
+            required
           ></textarea>
           <div class="modal__form-info">
             Нажимая
