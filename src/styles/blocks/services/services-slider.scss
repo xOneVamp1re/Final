@@ -110,17 +110,6 @@
     &--cost {
       width: 260px;
       @media (min-width: 767.98px) {
-        &:not(:last-child) {
-          ::after {
-            position: absolute;
-            width: calc(100% - 32px);
-            height: 1px;
-            bottom: 0;
-            left: 16px;
-            background-color: rgb(234, 234, 234);
-            content: '';
-          }
-        }
         &:nth-child(2) {
           grid-column: 1/5;
           grid-row: 2/3;
@@ -157,6 +146,18 @@
     }
   }
 }
+.services-slider__elem--cost {
+  &:not(:last-child)::after {
+    position: absolute;
+    width: calc(100% - 32px);
+    height: 1px;
+    bottom: 0;
+    left: 16px;
+    background-color: rgb(234, 234, 234);
+    content: '';
+  }
+}
+
 .swiper-slide {
   flex-shrink: 0;
   position: relative;
