@@ -630,15 +630,6 @@ html {
   width: 260px;
 }
 @media (min-width: 767.98px) {
-  .services-slider__elem--cost:not(:last-child) ::after {
-    position: absolute;
-    width: calc(100% - 32px);
-    height: 1px;
-    bottom: 0;
-    left: 16px;
-    background-color: rgb(234, 234, 234);
-    content: "";
-  }
   .services-slider__elem--cost:nth-child(2) {
     grid-column: 1/5;
     grid-row: 2/3;
@@ -670,6 +661,16 @@ html {
     width: initial;
   }
 }
+.services-slider__elem--cost:not(:last-child)::after {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 1px;
+  bottom: 0;
+  left: 16px;
+  background-color: rgb(234, 234, 234);
+  content: "";
+}
+
 .swiper-slide {
   flex-shrink: 0;
   position: relative;
@@ -1710,4 +1711,4 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/*# sourceMappingURL=main.811b4de2b03a411556eb.css.map*/
+/*# sourceMappingURL=main.fb1689108eed1f1ea85a.css.map*/
